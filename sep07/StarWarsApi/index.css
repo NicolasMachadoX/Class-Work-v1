@@ -1,0 +1,177 @@
+*{margin: 0px; padding:0px;}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+  
+    height: 9rem;
+    background-color: black;
+}
+
+body{
+    background-image: url(./fondo.png);
+
+}
+
+.containerObjects{
+    padding: 3em;
+    margin: 9em;
+    height: 2   0rem;
+
+
+
+}
+#containerCards{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+}
+
+.cardsInfo{
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 20em;
+    height: 20em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(238, 255, 0);
+    
+    
+}
+.cardsInfo p{
+    letter-spacing: 1px;
+    color: black;
+    padding: 0.2em;
+    font-family: 'Star Wars', sans-serif;                   
+    font-size: 1em;
+    -webkit-text-stroke: 0.5px rgb(238, 255, 0);
+    border-style: none;
+    border-color: black;
+}
+
+.containerLogo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 20em;
+    padding: 4rem;
+    
+
+}
+
+.api{ 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 7em;
+    height: 7em;
+    transform: rotate(15deg);
+}
+.logo-api{
+   
+    margin: 0px;
+    width: 45rem;
+    height: 21rem;
+    position: relative;
+
+}
+.logo{
+    width: 40rem;
+    height: 20rem;
+    border-radius: 1.5rem;
+
+}
+
+
+
+
+.api:hover{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    
+    animation: rotateApi 2s linear infinite;
+
+}
+.buttons-name{
+  background-color:rgba(0, 0, 0, 0);
+  border-style: none;
+  
+}
+.buttons-name:hover p{
+    -webkit-text-stroke: 0.5px rgb(255, 0, 0);
+}
+.buttons-name:focus p{
+    -webkit-text-stroke: 0.5px rgb(0, 255, 64);
+}
+
+@keyframes rotateApi {
+   
+    0% {
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+.simpleContainer{
+    text-align: center;
+    width: 10rem;
+    height: 5rem;
+
+}
+
+.buttons{
+    padding: 0.5rem;
+
+}
+.simpleContainer p{
+    font-family: 'Star Wars', sans-serif;                   
+    font-size: 36px;
+    -webkit-text-stroke: 0.5px rgb(238, 255, 0);
+    border-style: solid;
+    border-color: black;
+
+}
+
+.buttons button{
+    border-style: none;
+    background-color: rgba(238, 255, 0, 0);
+}
+.buttons h1{
+    
+    font-family: 'Star Wars', sans-serif;                   
+    font-size: 15px;
+    -webkit-text-stroke: 0.5px rgb(238, 255, 0);
+    border-style: solid;
+    border-color: black;
+
+}
+
+.next:hover h1{
+    
+    font-family: 'Star Wars', sans-serif;                   
+    font-size: 15px;
+    -webkit-text-stroke: 0.5px rgb(255, 0, 0);
+    border-style: solid;
+    border-color: black;
+
+}
+
+.previous:hover h1{
+    
+    font-family: 'Star Wars', sans-serif;                   
+    font-size: 15px;
+    -webkit-text-stroke: 0.5px rgb(255, 0, 0);
+    border-style: solid;
+    border-color: black;
+
+}

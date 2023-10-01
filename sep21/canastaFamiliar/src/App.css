@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+body{ 
+  background-color: #09152e;
+}
+.containerCards{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #606af3;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3em;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #e938b4;
+  color: #fff;
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b30009;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li button {
+  margin-left: 8px;
+}
+
+li input {
+  margin-right: 8px;
+}
+
+li input, li button {
+  font-size: 1em;
+}
+
+
