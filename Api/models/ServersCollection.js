@@ -13,43 +13,43 @@ const serversSchema = Schema({
     },
     hungerGames:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+        
     },
     bedWars:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+      
     },
     skyWars:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+      
     },
     buildBattle:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+       
     },
     skyBlock:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+      
     },
     survival:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+      
     },
     pvp:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+      
     },
     eggWars:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+     
     },
     creative:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+
     },
     prision:{
         type: Boolean,
-        require: [true, 'Dato obligatorio']
+     
     },
     access:{
         type: String,
@@ -72,7 +72,35 @@ const serversSchema = Schema({
         type: String,
         enum: ['Bedrock','Java'],
         require: [true, 'Dato obligatorio']
+    },
+    mods:{
+        type: Object,
+      
+    },
+    texture:{
+        type: String,
+  
+    },
+    shaders:{
+        type: String,
+       
+    },
+    map:{
+        type: String,
+       
+    },
+    description:{
+        type: String,
+    },
+    category:{
+        type: String,
+        require: [true, "The category is obligatory"]
+    },
+    downloads:{
+        type: String
     }
+   
+   
 
 })
 
