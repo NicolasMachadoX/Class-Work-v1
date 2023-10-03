@@ -29,6 +29,15 @@ const getByAcess = async (req,res) =>{
     }
 }
 
+const getByCode = async (req,res) =>{
+    try {
+        const data = await Servers.findOne({ip:req.params.code});
+        res.json({data: data})
+    } catch (error) {
+     res.status(404).json({msg:error})   
+    }
+}
+
 const getByIp = async (req,res) =>{
     try {
         const data = await Servers.findOne({ip:req.body.query});
@@ -97,6 +106,14 @@ const postServer = async(req,res) =>{
         res.status(404).json({msg:error})   
     }
 }
+const getByCategory = async (req,res) =>{
+    try {
+        const data = await Servers.findOne({ip:req.params.category});
+        res.json({data: data})
+    } catch (error) {
+     res.status(404).json({msg:error})   
+    }
+}
 
 
 
@@ -110,6 +127,24 @@ const updateById = async (req, res) => {
     }
 };
 
+const getByMods = async (req,res) =>{
+    try {
+        const data = await Collection.findOne({ip:req.params.mod});
+        res.json({data: data})
+    } catch (error) {
+     res.status(404).json({msg:error})   
+    }
+}
+
+const getByShaders = async (req,res) =>{
+    try {
+        const data = await Collection.findOne({ip:req.params.shader});
+        res.json({data: data})
+    } catch (error) {
+     res.status(404).json({msg:error})   
+    }
+}
+
 module.exports = {
     getAll,
     postServer,
@@ -121,5 +156,12 @@ module.exports = {
     getByIp, 
     getByVersion,
     getByPlataform,
-     getByCapacity
+     getByCapacity,
+     getByCode,
+     getByCategory,
+     getByMods,
+     getByShaders
+     
+     
+     
 }
